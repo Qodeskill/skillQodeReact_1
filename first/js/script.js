@@ -35,11 +35,11 @@
 // console.log(typeof (digit))
 // console.log(digitDecimal)
 
-var a = 95
-var b = '97'
-var b1 = "9"
+// var a = 95
+// var b = '97'
+// var b1 = "9"
 
-console.log(b == 'a')
+// console.log(b == 'a')
 // console.log(a > b)
 // console.log(typeof (a))
 // console.log(typeof (b))
@@ -53,4 +53,31 @@ console.log(b == 'a')
 // else
 //     console.log("b is greater...")
 
+// 28/02/2022
+//var let const
+//hoisting
+// undefined NaN(Not a Number) null
+
+
+// var a = 10
+// // var
+// console.log(typeof (a))
+// a = a + 10
+// console.log(typeof (a))
+// a = a + 's'
+// console.log(typeof (a))
+// console.log(a)
+
+
+// var a = 10
+// var b = '10'
+// console.log(a == b)
+// console.log(a === b)
+// console.log(undefined == NaN)
+// console.log(NaN == NaN)
+console.log(undefined === undefined)
+
+
+// a = 10
+// console.log(a)
 
