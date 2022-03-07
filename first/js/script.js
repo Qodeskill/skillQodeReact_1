@@ -75,9 +75,39 @@
 // console.log(a === b)
 // console.log(undefined == NaN)
 // console.log(NaN == NaN)
-console.log(undefined === undefined)
+// console.log(undefined === undefined)
 
 
 // a = 10
 // console.log(a)
 
+//07-03-2022
+
+// console.log(1 + 1);
+// console.log(1 + '1');
+// console.log(10 * '2');
+// console.log(10 / '2');
+// console.log(0.1 + 0.2 == 0.3);//inter
+// console.log(0.1 * 0.2);//inter
+// console.log(10 == '10');
+// console.log(10 === '10');
+// console.log(10 / 0);
+
+// true = 1
+// false =0
+// console.log(typeof (true))
+// console.log(true + true)
+// console.log(true + true + false + true)
+// console.log(true * true)
+// console.log(true * false)
+// console.log(true / false)
+
+// console.log(1 < 2);
+// console.log(2 > 3);
+// console.log(1 < 2 < 3);
+// 1 < 2
+// 1<3
+// console.log(1 < 2 < 3);
+// console.log(3 > 2 > 1);
+                // 3>2
+                // 1>1
