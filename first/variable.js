@@ -44,11 +44,11 @@
 
 
 
-let data = 100;
-let data = 200;
-console.log(data);            //var:200       //let:SyntaxError: Identifier 'data' has already been declared
-    //var keyword allows the duplicate variables
-    //let keyword overcomes the duplicate variables
+// let data = 100;
+// let data = 200;
+// console.log(data);            //var:200       //let:SyntaxError: Identifier 'data' has already been declared
+//var keyword allows the duplicate variables
+//let keyword overcomes the duplicate variables
 
 
 /*
@@ -70,6 +70,13 @@ console.log(data);            //var:200       //let:SyntaxError: Identifier 'dat
 */
 
 
+// const a = 10;
+// a = 100;       //  TypeError: Assignment to constant variable.
+// {
+//     console.log(a);
+// }
+const a  //SyntaxError: Missing initializer in const declaration
+console.log(a);
 
 
 
