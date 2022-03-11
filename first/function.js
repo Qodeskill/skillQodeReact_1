@@ -59,3 +59,72 @@
 //     return n * n;
 // }
 // console.log(doSqare())
+
+// ---------------------------------------------------------------------------
+//11/03/22
+// ---------------------------------------------------------------------------
+
+// function function_one(param1, param2, param3) {
+//     console.log(param1, param2, param3);
+// }
+// function_one("one", "two", "three");
+
+// //... spread operator
+// function function_one(...param1) {
+//     console.log(param1);
+// }
+// function_one("one", "two", "three", "four", "five", "six");
+// function_one(undefined, "one", "two", "three", "four", "five", "six");
+
+// function function_one(...param1) {
+//     console.log(param1);
+// }
+// function_one(undefined, undefined, undefined)
+// function_one(null, null, null)
+// function_one(null, "hello2", null)
+// function_one(); //[] empty array
+
+// -----------
+
+// function function_one(param1, ...param3) {
+//     console.log(param1, param3);
+// }
+
+// function_one("hello1", "hello2", "hello3", "hello4")//SyntaxError: Rest parameter must be last formal parameter
+
+// ----- default parameter
+// function function_one(param1 = "Hello-1", param2 = "Hello-2", param3 = "Hello-3") {
+//     console.log(param1, param2, param3);
+// }
+
+// function_one();
+// function_one("one");
+// function_one(undefined, undefined, undefined);
+// function_one(undefined, "hello");
+// function_one(null, null, null);
+// function_one(null, "hello-A", undefined);
+
+// function function_one(param1 = "Hello-1", ...param2) {
+//     console.log(param1, param2);
+// }
+// function_one()
+// function_one("one", "two")
+// function_one(null, "two", "three", "four", "five")
+// function_one(undefined, undefined, undefined)
+// function_one(null, null, null)
+// function_one(null)
+// function_one(undefined, undefined, null)
+// function_one(null, undefined, null)
+
+
+function function_one(param1, param2 = "Hello-1", ...param3) {
+    console.log(param1, param2, param3);
+}
+// function_one()
+
+// function_one("one", "two", "three", "four", "five")
+// function_one(undefined, undefined, undefined)
+// function_one(null, null, null)
+// function_one(null)
+// function_one(undefined, undefined, null)
+
