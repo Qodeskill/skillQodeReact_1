@@ -117,9 +117,9 @@
 // function_one(null, undefined, null)
 
 
-function function_one(param1, param2 = "Hello-1", ...param3) {
-    console.log(param1, param2, param3);
-}
+// function function_one(param1, param2 = "Hello-1", ...param3) {
+//     console.log(param1, param2, param3);
+// }
 // function_one()
 
 // function_one("one", "two", "three", "four", "five")
@@ -127,4 +127,70 @@ function function_one(param1, param2 = "Hello-1", ...param3) {
 // function_one(null, null, null)
 // function_one(null)
 // function_one(undefined, undefined, null)
+
+// ---------------------------------------------------------------------------
+//12/03/22
+// ---------------------------------------------------------------------------
+
+// function
+// 1) defination
+// function function-name(params1, params2, ...., paramsn) {
+//     logic / code
+// }
+// 2) calling
+// function-name(arg1, arg2, ..., argn);
+
+// function function_one() {
+//     return "this is function_one";
+// }
+
+// anonymous function -- > arrow function
+// --> function without name
+
+// keyword variable = (param1, param2, param3, ..., paramn) => {
+//     logic / code
+// }
+
+// let function_one = function () { } //anonynous function
+// let function_two = () => { }        //arrow function
+
+// function_one();
+// ------------------------
+// let function_one = function () { return " function_one called... " }
+// let function_two = () => " function_two called... "
+
+// console.log(function_one());
+// console.log(function_two())
+
+// ------------------------
+
+// let function_one = (param1) => " function_two called... " + param1
+// console.log(function_one("Hello"));
+
+// let function_one = param1 => " function_two called... " + param1
+// console.log(function_one("Hello"));
+
+// ------------------------
+
+// let function_one = (param1, param2, param3) => param1 + " " + param2 + " " + param3
+// console.log(function_one("Hello 1", "Hello 2", "Hello 3"));
+
+// ------------------------
+
+// let function_one = (param1, param2, param3) => console.log(param1 + " " + param2 + " " + param3)
+// function_one("Hello 1", "Hello 2", "Hello 3");                  //call_1
+// console.log(function_one("Hello 1", "Hello 2", "Hello 3"));     //call_2
+// let return_one = function_one("Hello 1", "Hello 2", "Hello 3");     //call_2
+// console.log(return_one);
+
+// ------------------------
+
+// let function_one = (param1, param2, param3) => {
+//     console.log(param1 + " " + param2 + " " + param3);
+//     return "function_one";
+// }
+
+// console.log(function_one("Hello 1", "Hello 2", "Hello 3"));     //call_2
+// let return_one = function_one("Hello 1", "Hello 2", "Hello 3");     //call_2
+// console.log(return_one);
 
