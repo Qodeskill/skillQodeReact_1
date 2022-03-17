@@ -2,20 +2,16 @@
 //let keyword introduced in ES6
 //let keyword used to declare the variables
 
-//differences
-
-// for (var i = 0; i < 5; i++) {
+// differences
+// let i;
+// for (i = 0; i < 5; i++) {
 
 // }
-// console.log(i);             //var : 5    //let : ReferenceError: i is not defined
+// console.log(i);                 //var : 5    //let : ReferenceError: i is not defined
 // console.log(i);             //var : 5    //let : ReferenceError: i is not defined
 
 //var keyword breaks the "scope" rule
 //let keyword "obeys" the scope rule
-
-
-
-
 
 // console.log(data);                //var:undefined     //let:ReferenceError: Cannot access 'data' before initialization
 // let data = 100;
@@ -75,8 +71,8 @@
 // {
 //     console.log(a);
 // }
-const a  //SyntaxError: Missing initializer in const declaration
-console.log(a);
+// const a  //SyntaxError: Missing initializer in const declaration
+// console.log(a);
 
 
 
