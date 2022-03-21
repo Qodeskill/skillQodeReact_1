@@ -1,1 +1,1 @@
-function_one
+my_func
