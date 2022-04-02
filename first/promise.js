@@ -1,24 +1,32 @@
-//Execution of tasks with "dependencies" between them called as "Promises"
-//Promises are used to create the "Asynchromous" Calls
-//1) Promise Creation
-//2) Promise Consumption
-//Producer will create the Promises
-//Producer will create the Promises with the help of "Promise" class
-//Consumer will consume the Promises in two ways
-//1) then()
-//2) async & await keywords
+// Execution of tasks with "dependencies" between them called as "Promises"
+// Promises are used to create the "Asynchromous" Calls
+// 1) Promise Creation          //producer
+// 2) Promise Consumption       //consumer
+// Producer will create the Promises
+// Producer will create the Promises with the help of "Promise" class
+//     Consumer will consume the Promises in two ways
+// 1) then()
+// 2) async & await keywords
 
-/*
-    let promise1 = new Promise((resolve,reject)=>{
-        resolve("welcome to promises");
-    });
-    promise1.then((posRes)=>{
-        console.log(posRes);
-    },(errRes)=>{
-        console.log(errRes);
-    });
+// new Promise((res, rej) => {
+
+// })
+
+
+
+let promise1 = new Promise((resolve, reject) => {
+    // resolve("welcome to promises");
+});
+// console.log(promise1);
+
+
+promise1.then((posRes) => {
+    console.log(posRes);
+}, (errRes) => {
+    console.log(errRes);
+});
     //welcome to promises
-*/
+
 
 /*
     let promise1 = new Promise((resolve,reject)=>{
