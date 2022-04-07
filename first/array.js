@@ -140,65 +140,87 @@
 // }), 1);
 // console.log(arr);
 
+// *************************************************
+// ############# map ##############
+// console.log(
+//     [1, 2, 3, 4, 5].map((element, index) => {
+//         return element * 100;
+//     })
+// );
+
+// console.log(
+//     [100, 200, 300, 400, 500].map((element, index) => {
+//         return element / 10;
+//     })
+// );
+// console.log(
+//     [1, 2, 3, 4, 5].map((element, index) => {
+//         return element == 1 || element == 5 ? "Hello" : "welcome"
+//     })
+// );
+
+// function square(n) {
+//     return n * n;
+// }
+// arr = [1, 2, 3, 6, 5, 4];
+
+// var new_arr = arr.map(square)
+// console.log(new_arr);
+// console.log(arr);
 
 
+// ############# filter ##############
 /*
-    console.log(
-        [1,2,3,4,5].map((element,index)=>{
-            return element*100;
-        })
-    );
+// console.log(
+//     [100, 200, 300, 400, 500].filter((element, index) => {
+//         return element >= 300;
+//     })
+// );
 
-console.log(
-    [100,200,300,400,500].map((element,index)=>{
-        return element/10;
-    })
-);
-console.log(
-    [1,2,3,4,5].map((element,index)=>{
-        return element == 1 || element == 5 ? "Hello" : "welcome"
-    })
-);
-/
+// arr = [1, 2, 3, 6, 5, 4];
+// var new_arr = arr.filter(function (x) {
+//     return x % 2 == 0;
+// });
+// console.log(new_arr)
+
+
+// console.log(
+//     [1, 2, 3, 4, 5].map((element, index) => {
+//         return element * 100;
+//     }).filter((element, index) => {
+//         return element <= 200;
+//     })
+// );
 */
+// ########## reduce ########## 
+// console.log(
+//     [1, 2, 3, 4, 5].reduce((firstElement, nextElement) => {
+//         return firstElement + nextElement;
+//     })
+// );
 
 
-/*
-    console.log(
-        [100,200,300,400,500].filter((element,index)=>{
-            return element>=300;
-        })
-    );
+function product(a, b) {
+    console.log(" first ", a, " ", b);
+    return a * b;
+}
+arr = [1, 2, 3, 4, 5, 6];
 
-console.log(
-    [1,2,3,4,5].map((element,index)=>{
-        return element*100;
-    }).filter((element,index)=>{
-        return element<=200;
-    })
-);
+var productOfArr = arr.reduce(product)
+console.log(productOfArr)
 
-*/
+// console.log(
+//     [1, 2, 3, 4, 5].map((element, index) => {
+//         return element * 100;
+//     }).filter((element, index) => {
+//         return element <= 300;
+//     }).reduce((firstElement, nextElement) => {
+//         return firstElement + nextElement;
+//     }, 5000)
+// );
 
 
-/*
-console.log(
-    [1,2,3,4,5].reduce((firstElement,nextElement)=>{
-        return firstElement + nextElement;
-    })
-);
 
-console.log(
-    [1,2,3,4,5].map((element,index)=>{
-        return element*100;
-    }).filter((element,index)=>{
-        return element<=300;
-    }).reduce((firstElement,nextElement)=>{
-        return firstElement+nextElement;
-    },5000)
-);
-
-*/
 
 
 //reverse()
