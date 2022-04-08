@@ -200,14 +200,14 @@
 // );
 
 
-function product(a, b) {
-    console.log(" first ", a, " ", b);
-    return a * b;
-}
-arr = [1, 2, 3, 4, 5, 6];
+// function product(a, b) {
+//     console.log(" first ", a, " ", b);
+//     return a * b;
+// }
+// arr = [1, 2, 3, 4, 5, 6];
 
-var productOfArr = arr.reduce(product)
-console.log(productOfArr)
+// var productOfArr = arr.reduce(product)
+// console.log(productOfArr)
 
 // console.log(
 //     [1, 2, 3, 4, 5].map((element, index) => {
@@ -289,4 +289,88 @@ console.log(
 //         return arr.indexOf(element) === index;
 //     })
 // );     
+
+
+
+// ###############################################################
+
+// let arr = [10, 20, 30];
+
+// forEach()
+
+// arr.forEach((ele, index, arr) => { console.log(ele, " - ", index, " - ", arr) })
+// ["Hello_1", "Hello_2"].forEach((element, index) => {
+//     console.log(element);
+// });
+// for (let element of ["Hello_1", "Hello_2"]) {
+//     console.log(element);
+// }
+// json  - javascript object notation
+// let obj = {
+//     "key1": "Hello_1",
+//     "key2": "Hello_2",
+//     "key3": "Hello_3"
+// };
+// for (let key in obj) {
+//     console.log(obj[key]);
+// }
+
+
+// ###############################################################
+//sort()
+//ascending / descending
+// arr = [10, 20, 11, 30, 21, 40, 31, 50, 41, 60, 52, 62, 70,];
+// arr1 = arr.sort((val1, val2) => {
+//     return (val1 - val2)
+// })
+// console.log(arr1);
+// console.log(
+//     [1, 5, 2, 4, 3].sort((arg1, arg2) => {
+//         return arg1 - arg2;
+//     })
+// );
+
+// //[ 1, 2, 3, 4, 5 ]
+// console.log(
+//     [5, 1, 2, 4, 3].sort((arg1, arg2) => {
+//         return arg2 - arg1;
+//     })
+// );
+// //[ 5, 4, 3, 2, 1 ]
+// console.log(
+//     [1, 5, 2, 4, 3].sort((arg1, arg2) => {
+//         return arg1 - arg2
+//     })[1]
+// );          //2
+// console.log(
+//     [1, 5, 2, 4, 3].sort((arg1, arg2) => {
+//         return arg2 - arg1;
+//     })[1]
+// );          //4 
+
+
+// ###############################################################
+
+// The substring() method returns the part of the string between the start and end indexes, or to the end of the string.
+// console.log(
+//     "welcome to fullstack ui".substr(8, 2)
+// );
+// console.log(
+//     "welcometofullstack ui".substring(8, 10)
+// );
+// console.log(
+//     "welcome to fullstack ui".substr(1,2)
+// );
+// console.log(
+//     "welcome to fullstack ui".substr(-12, 9)
+// );
+// console.log(
+//     "welcome to es6".substring(0, 7)
+// );
+console.log(
+    "welcome to es6".substring(-5, 2)
+);
+// console.log(
+//     "welcome to es6".substring(11)
+// );
 
