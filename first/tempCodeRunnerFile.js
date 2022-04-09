@@ -1,3 +1,3 @@
-for (let element of ["Hello_1", "Hello_2"]) {
-//     console.log(element);
-// }
+ setTimeout(() => {
+            console.log(i);
+        }, 5000)
