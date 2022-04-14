@@ -1,0 +1,30 @@
+Introduction React
+*******************
+    A JavaScript library for building user interfaces
+- single page application
+- Component-Based
+    - jsx 
+- vertual dom
+
+**********************
+software installation
+    node js
+
+**********************
+fullstack - design + forntend + backend
+JavaScript
+MERN
+    M - MongoDB
+    E - Express js
+    R - React
+    N - NodeJS 
+MEAN
+    M - MongoDB
+    E - Express js
+    A - Angular
+    N - NodeJS
+MEVN 
+    M - MongoDB
+    E - Express js
+    V - Vue js
+    N - NodeJS
