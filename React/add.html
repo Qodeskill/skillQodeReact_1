@@ -14,25 +14,27 @@
             console.log(this, "Constructor");
         }
         fn = () => {
-            let n1 = this.refs.n1.value;
-            let n2 = this.refs.n2.value;
+            // console.log(" click a1: ", this.refs.a1.value);
+            // console.log(" click a2: ", this.refs.a2.value);
+            let n1 = this.refs.a1.value;
+            let n2 = this.refs.a2.value;
             let totalSum = Number(n1) + Number(n2);
             this.setState({
                 sum: totalSum
             });
         };
         render() {
-            debugger;
+            // debugger;
             console.log(this, "render");
             return (
                 <div>
                     <p>
                         <b>N1:</b>
-                        <input ref="n1" />
+                        <input ref="a1" />
                     </p>
                     <p>
                         <b>N2:</b>
-                        <input ref="n2" />
+                        <input ref="a2" />
                     </p>
                     <p>
                         <button onClick={this.fn}>Add</button>
