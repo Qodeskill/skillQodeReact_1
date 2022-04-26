@@ -367,9 +367,9 @@ console.log(
 // console.log(
 //     "welcome to es6".substring(0, 7)
 // );
-console.log(
-    "welcome to es6".substring(-5, 2)
-);
+// console.log(
+//     "welcome to es6".substring(-5, 2)
+// );
 // console.log(
 //     "welcome to es6".substring(11)
 // );
