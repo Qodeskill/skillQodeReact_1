@@ -1,0 +1,32 @@
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src=" https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<div id="root"></div>
+<script type="text/babel">
+  class Parent extends React.Component {
+    render() {
+      const data = "Hyderabad";
+      console.log("parent this ", this);
+      return (
+        <div>
+          <Child d={data} l="Mumbai" />
+        </div>
+      );
+    }
+  }
+
+  class Child extends React.Component {
+    render() {
+      console.log("child this ", this);
+      return (
+        <div>
+          Data which is coming from Parent...{this.props.d}.... {this.props.l}
+        </div>
+      );
+    }
+  }
+  // console.log("child : ", Child);
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<Parent />);
+  // ReactDOM.render(<Parent />, document.getElementById("root"));
+</script>
