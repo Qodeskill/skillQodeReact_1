@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>jQuery</title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <h4>mousemove</h4>
+    <input type="button" value="mouse move me" id="button1">
+    
+    <script>
+      $(document).mousemove(
+        function(event)
+        {
+          console.log(event.pageX + ", " + event.pageY)
+        }
+      );
+
+    </script>
+  </body>
+</html>
+

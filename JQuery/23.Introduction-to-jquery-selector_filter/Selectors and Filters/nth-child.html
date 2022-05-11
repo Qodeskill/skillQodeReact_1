@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>jQuery</title>
+    <style>
+      div
+      {
+        padding: 5px;
+        margin: 5px;
+        border: 3px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>nth-child</h4>
+
+    <div id="div1">
+      <p>para 1</p>
+      <p>para 2</p>
+      <p>para 3</p>
+      <p>para 4</p>
+      <p>para 5</p>
+    </div>
+
+    <div id="div2">
+      <p>para 6</p>
+      <p>para 7</p>
+      <p>para 8</p>
+      <p>para 9</p>
+      <p>para 10</p>
+    </div>
+
+    <div id="div3">
+      <p>para 11</p>
+      <p>para 12</p>
+      <p>para 13</p>
+      <p>para 14</p>
+      <p>para 15</p>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $("p:nth-child(3)").css("background-color", "lightblue");
+    </script>
+  </body>
+</html>
+

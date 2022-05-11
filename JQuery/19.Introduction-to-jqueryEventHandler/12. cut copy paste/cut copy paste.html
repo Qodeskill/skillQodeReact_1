@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h4>cut copy paste</h4>
+    <input type="text" value="hello"><br>
+    <input type="text" value="hello"><br>
+    <input type="text" value="hello"><br>
+    <input type="text" value="hello"><br>
+
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $(window).on("cut copy paste", window, function(event) {
+        event.preventDefault();
+        alert("cut, copy, paste disabled");
+      });
+    </script>
+  </body>
+</html>
+
+
+
+

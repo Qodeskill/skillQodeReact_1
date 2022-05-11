@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h4>change - checkbox</h4>
+    <input type="checkbox" id="chk1"><br>
+    <span id="span1"></span>
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $("#chk1").change(function() {
+        console.log(  $("#chk1")  );
+
+        if ($("#chk1")[0].checked)
+        {
+          $("#span1").html("Checkbox is checked");
+        }
+        else
+        {
+          $("#span1").html("Checkbox is unchecked");
+        }
+      });
+    </script>
+  </body>
+</html>
+
+

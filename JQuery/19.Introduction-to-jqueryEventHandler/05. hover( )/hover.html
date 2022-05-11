@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>jQuery</title>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <h4>hover</h4>
+    <input type="button" value="mouse over me" id="button1">
+    
+    <script>
+      $("#button1").hover(
+        function()
+        {
+          console.log("mouse over");
+          $("#button1").val("inside button");
+        },
+        function()
+        {
+          console.log("mouse out");
+          $("#button1").val("outside button");
+        }
+      );
+
+    </script>
+  </body>
+</html>
+

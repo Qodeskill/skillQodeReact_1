@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h4>has</h4>
+
+    <div>
+      <p>para 1</p>
+      <p>para 2</p>
+    </div>
+    <div>
+      Hello
+    </div>
+    <div>
+      <p>para 3</p>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $("div:has('p')").css("background-color", "lightblue");
+    </script>
+  </body>
+</html>
+

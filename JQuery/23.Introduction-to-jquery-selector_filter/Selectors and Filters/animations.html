@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Animations</title>
+    <style>
+      #div1
+      {
+        background-color: skyblue;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Animation</h4>
+    <div id="div1">div 1</div>
+    <input type="button" value="Animate" id="btnAnimate">
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      $("#btnAnimate").click(function() {
+        $("#div1").animate( { "width":"400px" }, 2000 ).animate( { "height":"350px" }, 2000 ).animate( { "font-size":"40px" }, 2000 );
+      });
+    </script>
+  </body>
+</html>
+

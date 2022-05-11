@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h4>keypress</h4>
+    Alphabets only: <input type="text" id="txt1"><br>
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $("#txt1").keypress(function(event) {
+        if ( (event.which >= 97 && event.which <= 122) || (event.which >= 65 && event.which <= 90) || (event.which == 32) || (event.which == 8) )
+        {
+          //accept [by default]
+        }
+        else
+        {
+          //reject
+          event.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>
+
+

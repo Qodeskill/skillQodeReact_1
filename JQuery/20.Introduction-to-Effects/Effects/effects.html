@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>jQuery</title>
+    <style>
+      #div1
+      {
+        display: none;
+        background-color: skyblue;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Effects</h4>
+    <input type="button" value="Send" id="button1">
+    <input type="button" value="Toggle" id="button3">
+    <div id="div1">
+      Your mail sent successfully
+      <input type="button" value="Close" id="button2">
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      $("#button1").click(function() {
+        //$("#div1").fadeIn(2000);
+        //$("#div1").slideDown(2000);
+        $("#div1").show(2000);
+      });
+
+      $("#button2").click(function() {
+        //$("#div1").fadeOut(2000);
+        //$("#div1").slideUp(2000);
+        //$("#div1").hide(2000);
+        $("#div1").fadeTo(2000, 0.2);
+      });
+
+      $("#button3").click(function() {
+        //$("#div1").toggle(2000);
+        //$("#div1").fadeToggle(2000);
+        $("#div1").slideToggle(2000);
+      });
+    </script>
+  </body>
+</html>
+

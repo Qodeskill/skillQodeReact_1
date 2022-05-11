@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>jQuery</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h4>Attribute Selector</h4>
+    <img src="img1.jpg" width="200px">
+    <img src="img2.jpg" width="200px">
+    <img src="img3.jpg" width="200px">
+    <img src="earth.gif" width="200px">
+    <img src="apple.gif" width="200px">
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      //$("img[src='img1.jpg'],img[src='earth.gif'],img[src='apple.gif']").css("border", "3px solid red"); //equal to
+      //$("img[src!='earth.gif']").css("border", "3px solid red"); //not equal to
+      //$("img[src^='ear']").css("border", "3px solid red"); //starts with
+      //$("img[src$='jpg']").css("border", "3px solid red"); //ends with
+      $("img[src*='pp']").css("border", "3px solid red"); //contains
+    </script>
+  </body>
+</html>
+

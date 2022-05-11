@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h4>off</h4>
+    <input type="button" value="button1" id="button1">
+
+    <div id="div1">
+      
+    </div>
+
+    <input type="button" value="off" id="button2">
+
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $(document).on("click", "input", function() {
+        console.log("clicked at " + new Date().toLocaleTimeString());
+        $("#div1").html('<input type="button" value="button1" id="button1"><br><input type="button" value="button1" id="button1">');
+      });
+
+      $("#button2").click(function() {
+        $(document).off("click", "input");
+      });
+    </script>
+  </body>
+</html>
+
+
+
+

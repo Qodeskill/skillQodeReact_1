@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h4>Manipulating Attributes</h4>
+    <img src="img1.jpg" width="300px" id="myimage">
+    <br>
+    <input type="button" id="button1" value="Set Single Attribute">
+    <input type="button" id="button2" value="Set Multiple Attributes">
+    <input type="button" id="button3" value="Get Attribute">
+    <input type="button" id="button4" value="Remove Attribute">
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      $("#button1").click(function() {
+        $("#myimage").attr("src", "img2.jpg");
+      });
+
+      $("#button2").click(function() {
+        $("#myimage").attr( { src:"img2.jpg", title: "Hello", alt: "This is my image" } );
+      });
+
+      $("#button3").click(function() {
+        var a = $("#myimage").attr("src");
+        console.log(a);
+      });
+
+      $("#button4").click(function() {
+        $("#myimage").removeAttr("src");
+      });
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h4>contentmenu</h4>
+
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $(window).on("contextmenu", window, function(event) {
+        console.log("right clicked at " + new Date().toLocaleTimeString());
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>
+
+
+
+

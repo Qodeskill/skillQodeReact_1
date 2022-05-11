@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <title>jQuery</title>
+    <style>
+      .class1
+      {
+        background-color: #0aa84c;
+        width: 60%;
+        margin: auto;
+        min-width: 400px;
+        max-width: 700px;
+      }
+      .class2
+      {
+        background-color: #adeeb6;
+      }
+      .class3
+      {
+        background-color: #79e988;
+      }
+      .class4
+      {
+        background-color: #05725a;
+        color: white;
+      }
+      .class5
+      {
+        padding: 3px;
+      }
+      .class6
+      {
+        text-align: center;
+      }
+      .class7
+      {
+        width: 70px;
+      }
+      .class8
+      {
+        width: 100px;
+      }
+      .class9
+      {
+        background-color: #ace775;
+      }
+      .class10
+      {
+        color: white;
+        font-weight: bold;
+      }
+      .class11
+      {
+        background-color: rgb(13, 143, 136);
+        font-weight: bold;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Realtime task on Selectors</h4>
+    <table id="table1">
+      <tr>
+        <th>Sl. No</th>
+        <th>Name</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Scott</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Smith</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Allen</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Jones</td>
+        <td>87</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Ford</td>
+        <td>37</td>
+      </tr>
+    </table>
+
+    
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $("#table1").addClass("class1");
+      $("#table1 tr:even").addClass("class2");
+      $("#table1 tr:odd").addClass("class9");
+
+      $("#table1 tr").hover(
+        function() {
+          $(this).toggleClass("class3");
+        },
+        function() {
+          $(this).toggleClass("class3");
+        }
+      );
+
+      $("#table1 tr:first").addClass("class4");
+      $("#table1 td").addClass("class5");
+      $("#table1 td:nth-child(1)").addClass("class6").addClass("class7");
+      $("#table1 td:nth-child(3)").addClass("class6").addClass("class8");
+
+      var allMarksTds = $("#table1 td:nth-child(3)");
+      console.log(allMarksTds);
+      var totalMarks = 0;
+      for (var i = 0; i < allMarksTds.length; i++)
+      {
+        var marks = Number( $(allMarksTds[i]).text() );
+        totalMarks = totalMarks + marks;
+      }
+      $("#span1").html(totalMarks);
+
+      $("#table1").append("<tr class='class11'> <td></td> <td>Total Marks</td> <td class='class10'>" + totalMarks + "</td> </tr>");
+    </script>
+  </body>
+</html>
+

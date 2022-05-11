@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>Real time task 2 - Displaying table</h4>
+    <table border="1" id="table1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Mobile</th>
+      </tr>
+
+    </table>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      var persons = [
+        { name: "Scott", age: 20, mobile: "98928329322" },
+        { name: "Smith", age: 22, mobile: "23849834" },
+        { name: "Allen", age: 25, mobile: "8889283911" }
+      ];
+      for (var i = 0; i < persons.length; i++)
+      {
+        var p = persons[i];
+        var s = "<tr> <td>" + p.name + "</td> <td>" + p.age + "</td> <td>" + p.mobile + "</td> </tr>";
+        $("#table1").append(s);
+      }
+    </script>
+  </body>
+</html>
+

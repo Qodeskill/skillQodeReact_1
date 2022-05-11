@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h4>change - dropdownlist</h4>
+    Bank:
+    <select id="drp1">
+      <option value="icici">ICICI Bank</option>
+      <option value="hsbc">HSBC Bank</option>
+      <option value="hdfc">HDFC Bank</option>
+      <option value="iob">Indian Overseas Bank</option>
+    </select>
+    <br>
+    <span id="span1"></span><br>
+    <span id="span2"></span><br>
+    
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $("#drp1").change(function() {
+        var currentlySelectedBank = $("#drp1").val();
+        $("#span1").html(currentlySelectedBank);
+        var currentlySelectedBankFullName = $("#drp1 option:selected").html();
+        $("#span2").html(currentlySelectedBankFullName);
+      });
+    </script>
+  </body>
+</html>
+
+

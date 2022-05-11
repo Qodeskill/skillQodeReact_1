@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h4>keyup</h4>
+    <input type="text" id="txt1"><br>
+    <input type="text" id="txt2"><br>
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $("#txt1").keyup(function() {
+        var a = $("#txt1").val();
+        $("#txt2").val(a);
+      });
+    </script>
+  </body>
+</html>
+
+

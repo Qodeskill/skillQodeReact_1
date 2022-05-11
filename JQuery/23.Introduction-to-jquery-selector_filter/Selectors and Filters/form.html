@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h4>form filters</h4>
+    <form action="http://localhost:8080">
+			<table>
+				<tr>
+					<td>first name</td>
+					<td colspan="4"><input type="text" name="first name"></td>
+				</tr>
+				<tr>
+					<td>last name</td>
+					<td colspan="4"><input type="text" name="last name" size="35" disabled="disabled"></td>
+				</tr>
+				<tr>
+					<td>password</td>
+					<td colspan="3"><input type="password" name="password" size="35"></td>
+				</tr>
+				<tr>
+					<td>date of birth</td>
+					<td>
+						<select name="month">
+							<option value="na">Month</option>
+							<option value="1">January</option>
+							<option value="2">February</option>
+							<option value="3">March</option>
+							<option value="4">April</option>
+							<option value="5">May</option>
+							<option value="6">June</option>
+							<option value="7">July</option>
+							<option value="8">August</option>
+							<option value="9">September</option>
+							<option value="10">October</option>
+							<option value="11">November</option>
+							<option value="12">December</option>
+						</select>
+					</td>
+					<td>
+						<select name="day" id="day">
+							<option value="na">Day</option>
+						</select>
+					</td>
+					<td>
+						<select name="year">
+							<option value="na">Year</option>
+							<option value="2018">2018</option>
+							<option value="2017">2017</option>
+							<option value="2016">2016</option>
+							<option value="2015">2015</option>
+							<option value="2014">2014</option>
+							<option value="2013">2013</option>
+							<option value="2012">2012</option>
+							<option value="2011">2011</option>
+							<option value="2010">2010</option>
+							<option value="2009">2009</option>
+							<option value="2008">2008</option>
+							<option value="2007">2007</option>
+							<option value="2006">2006</option>
+							<option value="2005">2005</option>
+							<option value="2004">2004</option>
+							<option value="2003">2003</option>
+							<option value="2002">2002</option>
+							<option value="2001">2001</option>
+							<option value="2000">2000</option>
+							<option value="1999">1999</option>
+							<option value="1998">1998</option>
+							<option value="1997">1997</option>
+							<option value="1996">1996</option>
+							<option value="1995">1995</option>
+							<option value="1994">1994</option>
+							<option value="1993">1993</option>
+							<option value="1992">1992</option>
+							<option value="1991">1991</option>
+							<option value="1990">1990</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>hidden</td>
+					<td colspan="4"><input type="hidden" name="hidden"></td>
+				</tr>
+				<tr>
+					<td>gender</td>
+					<td colspan="4">
+						<input type="radio" name="gender" value="male" checked="checked">
+						male
+						<input type="radio" name="gender" value="female">
+						female
+					</td>
+				</tr>
+				<tr>
+					<td>address</td>
+					<td colspan="4"><textarea></textarea></td>
+				</tr>
+				<tr>
+					<td>hobbies</td>
+					<td>
+						<input type="checkbox" name="hobbies" value="movies" checked="checked">
+						movies<br>
+						<input type="checkbox" name="hobbies" value="games">
+						games
+					</td>
+					<td>
+						<p>
+							<input type="checkbox" name="hobbies" value="sports">
+							sports <br>
+							<input type="checkbox" name="hobbies" value="books">
+							books
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<center>
+							<input name="image" type="image" src="submit.png" value="image">
+						</center>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<center>
+							<input type="file" value="file" name="file">
+						</center>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<center>
+							<input type="submit" value="submit" name="submit">
+						</center>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<center>
+							<input type="reset" value="reset" name="reset">
+						</center>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						<center>
+							<input type="button" value="button" name="button">
+							<br>
+							<button>button</button>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</form>
+
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      //$(":text").css("border", "2px solid green");
+      //$(":password").css("border", "2px solid green");
+      //$(":checkbox").css("margin", "10px");
+      //$(":radio").css("margin", "10px");
+      //$(":file").css("border", "2px solid green");
+      //$(":submit").css("border", "2px solid green");
+      //$(":image").css("border", "2px solid green");
+      $("select").css("border", "2px solid green");
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>jQuery</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h4>Adjacent Sibling Selector</h4>
+    <div id="div1">
+        <p>para 1</p>
+        <p>para 2</p>
+        <p id="p3">para 3</p>
+        <p>para 4</p>
+        <p>para 5</p>
+        <p>para 6</p>
+        <p>para 7</p>
+    </div>
+    <p>para 8</p>
+    <p>para 9</p>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      //$("#p3~p").css("background-color", "lightblue");
+      $("#p3+p").css("background-color", "lightblue");
+    </script>
+  </body>
+</html>
+

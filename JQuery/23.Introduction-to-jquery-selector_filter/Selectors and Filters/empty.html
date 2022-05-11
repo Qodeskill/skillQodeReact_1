@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>jQuery</title>
+    <style>
+      div
+      {
+        padding: 5px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>empty</h4>
+
+    <div>Hello</div>
+    <div></div>
+    <div>Hai</div>
+    <div>How</div>
+    <div></div>
+    <div>Are</div>
+    <div>You</div>
+    <div></div>
+
+    <script src="jquery-3.3.1.js"></script>
+
+    <script>
+      $("div:empty").css("background-color", "lightblue");
+    </script>
+  </body>
+</html>
+

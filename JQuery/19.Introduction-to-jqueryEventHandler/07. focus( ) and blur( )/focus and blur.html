@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>jQuery</title>
+    <style>
+      #span1
+      {
+        display: none;
+      }
+    </style>
+    <script src="jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <h4>focus and blur</h4>
+    Email: <input type="text" id="txt1">
+    <span id="span1">Use gmail only</span>
+    
+    <script>
+      $("#txt1").focus(function() {
+        $("#span1").show();
+      });
+
+      $("#txt1").blur(function() {
+        $("#span1").hide();
+      });
+    </script>
+  </body>
+</html>
+

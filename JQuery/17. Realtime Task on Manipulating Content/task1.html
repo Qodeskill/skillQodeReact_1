@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>Real time task 1 - Manipulating Content</h4>
+    Year:
+    <select id="yearDropDownList">
+      
+    </select>
+    <script src="jquery-3.3.1.js"></script>
+    <script>
+      var currentYear = new Date().getFullYear();
+      for (var i = currentYear; i >= currentYear - 100; i--)
+      {
+        $("#yearDropDownList").append("<option>" + i + "</option>");
+      }
+    </script>
+  </body>
+</html>
+
